@@ -1,5 +1,5 @@
 class Cjhello < Formula
-  version '0.1.2'
+  version '0.1.2.1'
   desc "It says hello nicely."
   homepage "https://github.com/aztecrex/hello-cjtool"
 
@@ -14,12 +14,8 @@ class Cjhello < Formula
 #  conflicts_with "whs??p"
 
   def install
-    bin.install "hello-cjtool"
-#    man1.install "rg.1"
-
-#    bash_completion.install "complete/rg.bash-completion"
-#    fish_completion.install "complete/rg.fish"
-#    zsh_completion.install "complete/_rg"
+    File.rename("hello-cjtool", "cjhello")
+    bin.install "cjhello"
   end
 end
 
