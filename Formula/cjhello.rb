@@ -1,4 +1,4 @@
-class cjhello < Formula
+class Cjhello < Formula
   version '0.1.2'
   desc "It says hello nicely."
   homepage "https://github.com/aztecrex/hello-cjtool"
